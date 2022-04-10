@@ -42,9 +42,45 @@ box-shadow: 0 2px 2px -2px rgba(0,0,0, 0.2);
 /*box-shadow: 0 4px 2px -2px rgba(0,0,0, 0.2);*/
 }
 
+#search {
+  display: flex;
+  width: 240px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 40px;
+}
+
+#search input {
+  -webkit-appearance: none;
+  border: 1px solid rgb(255, 255, 255);
+  height: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+  font-weight: 100;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: silver;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: silver;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: silver;
+}
+
+input:focus{
+  outline: none;
+}
+
 #profile {
   display: flex;
-  width: 127px;
+  width: 118px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -136,13 +172,68 @@ border-color: rgba(220, 220, 220, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: violet;
   color: white;
-  width: 28px;
-  height: 28px;
-  border-radius: 14px;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
 }
 
 .alert {
    color: orangered;
+}
+
+.today {
+  color: #AA77FD;
+}
+
+.soon {
+  color: #76E18C;
+}
+
+.past {
+  color: #BCC3CF;
+}
+
+.user-oz {
+  background-color: #3591FB;
+}
+
+.user-le {
+  background-color: #C55CFB;
+}
+
+.user-me {
+  background-color: #52CEFB;
+}
+
+.user-am {
+  background-color: #9159FC;
+}
+
+.apple-logo {
+  height: 40px;
+  /* width: 200px; */
+  padding: 10px 10px;
+  /* padding-left: 20px; */
+  object-fit: contain;
+  background-color: white;
+}
+
+.search-icon {
+  height: 22px;
+  /* width: 200px; */
+  padding: 10px 10px;
+  /* padding-left: 20px; */
+  object-fit: contain;
+  background-color: white;
+}
+
+.vl {
+  border-left: 3px solid #F7F8F9;
+  margin: 5px 15px 5px 24px;
+  height: 30px;
+}
+
+.job-title {
+  font-size: 14px;
 }
